@@ -11,15 +11,26 @@
 	<script src="https://kit.fontawesome.com/cd63254603.js" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.js"
 		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 	<script>
 		$(window).on("load", function () {
 			$(".loader-wrapper").fadeOut("slow");
 		});
+
+		$(document).ready(function(){
+          
+		  $('#x').click(function(){
+			  $('#box').fadeToggle('1000')
+			  $('#x').fadeToggle('1000')
+			  $('#close').fadeToggle('1000')
+		  })
+	  })
 	</script>
 </head>
 
 <body>
 	<div class="wrapper">
+		
 		<nav class="navbar">
 			<div>
 				<img class="logo" src="asset/css/images/logo.png">
@@ -59,10 +70,16 @@
 				<a href="mailto:sfiwmoc@gmail.com?subject=To secretary SFI WMO Unit"><i class="fa-solid fa-envelope"></i></a>
 			</div>
 		</div>
+		<div id="box">
+			<img id="program" src="asset/css/images/program.png">
+		</div>
+		<div id="close">
+			<button id="x">X</button>
+		</div>
 		<div class="loader-wrapper">
 			<span class="loader"><img src="asset/css/images/ani.gif"></span>
 		</div>
-
+		
 </body>
 
 </html>
